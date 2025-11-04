@@ -4,15 +4,14 @@
 
 # Dados tres números, genera un resultado que indique cuál es el mayor y cuál es el menor.
 
-$num_1 = 10;
-$num_2 = 9;
-$num_3 = 27;
+$n1 = 10;
+$n2 = 8;
+$n3 = 12;
 
-$max = max($num_1, $num_2, $num_3); #Este coje el numero mas grande dentro de las variables y la hace en una $max
+$grande = max($n1, $n2, $n3);
+$pequeño = min($n1, $n2, $n3);
 
-$min = min($num_1, $num_2, $num_3); #Este coje el numero mas pequeño dentro de las variables y la hace en una $min
-
-echo "El numero mas grande es: $max <br>";
-echo "El numero mas pequeño es: $min";
+echo "<div> El numero mas grande es: ", $grande, "</div>";
+echo "El numero mas pequeño es: ", $pequeño;
 
 ?>

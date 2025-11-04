@@ -9,6 +9,5 @@ for ($i = 1; $i <= 10; $i++){
     $factorial *= $i;
 }
 
-echo "El factorial es: $factorial";
-
+echo "El resultado es: ", $factorial;
 ?>

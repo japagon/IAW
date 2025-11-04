@@ -5,34 +5,25 @@
 
 # Dame 3 numeros, en el que se muestren ordenados del mas grande al mas pequeño
 
+$num1 = 8;
+$num2 = 10;
+$num3 = 12;
 
-// 1
-$a = 12;
-// 2
-$b = 7;
-// 3
-$c = 20;
-// 4
-if ($a >= $b && $a >= $c) {
-    // 4.1
-    if ($b >= $c) {
-        echo "$a, $b, $c\n";
-    } else {
-        echo "$a, $c, $b\n";
+if ($num1 >= $num2 && $num1 >= $num3){
+    if($num2 >= $num3){
+        echo "El orden es: ", $num1, ", ", $num2, ", ", $num3;
+        echo "El orden es: ", $num1, ", ", $num3, ", ", $num2;
     }
-} elseif ($b >= $a && $b >= $c) {
-    // 4.2
-    if ($a >= $c) {
-        echo "$b, $a, $c\n";
-    } else {
-        echo "$b, $c, $a\n";
+} elseif ($num2 >= $num1 && $num2 >= $num3){
+    if($num1 >= $num3){
+        echo "El orden es: ", $num2, ", ", $num1, ", ", $num3;
+        echo "El orden es: ", $num2, ", ", $num3, ", ", $num1;
     }
 } else {
-    // 4.3 (aquí $c es el mayor)
-    if ($a >= $b) {
-        echo "$c, $a, $b\n";
-    } else {
-        echo "$c, $b, $a\n";
+    if($num1 >= $num2){
+        echo "El orden es: ", $num3, ", ", $num1, ", ", $num2;
+        echo "El orden es: ", $num3, ", ", $num2, ", ", $num1;
     }
 }
+
 ?>
