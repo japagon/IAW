@@ -1,6 +1,4 @@
 ● What is a tridimensional array?
-
-
 ● How can we build it?
 ● How can we reference each of its element?
 ● How can we can we go through it?
